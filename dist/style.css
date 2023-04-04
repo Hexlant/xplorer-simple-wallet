@@ -1,0 +1,112 @@
+.container {
+  width: 800px;
+  margin: 200px auto;
+  padding: 10px 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.wallet-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wallet-list {
+  display: flex;
+  align-items: center;
+}
+
+.wallet-list > p {
+  margin-right: 20px;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+}
+
+.balance > p {
+  margin-right: 20px;
+}
+
+.nav-container {
+  border: 1px red olid;
+  margin: 10px 0 20px 0;
+}
+
+.nav-container > button {
+  margin: 0 15px 0 0;
+}
+
+.nav-transfer {
+  margin: 20px 0 40px 0;
+}
+
+.nav-transfer > input {
+  width: 400px;
+}
+
+.nav-transfer > input:first-child {
+  display: block;
+  width: 100px;
+}
+
+.detail-veiw-container {
+  padding: 10px 0;
+  border: 3px double #9e6b5d;
+}
+
+.detail-veiw-container > ul > li {
+  padding: 10px 0;
+}
+
+/* loading spinner */
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  left: 45%;
+  right: 45%;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: grey transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+.lds-ring::after {
+  content: "wait ...";
+  display: block;
+  margin: -20px 0;
+  text-align: center;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.display-none {
+  display: none;
+}

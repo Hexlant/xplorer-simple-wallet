@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Xplorer simple-wallet</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wallet-info">
+        <div class="wallet-list">
+          <p>Wallet list</p>
+          <select name="wallets" id="wallet-select"></select>
+        </div>
+        <div class="balance">
+          <p>balance:</p>
+          <span id="balance"></span>&nbsp;ETH
+        </div>
+      </div>
+
+      <div class="nav-container">
+        <button type="button" id="create-wallet-btn">지갑 생성</button>
+        <!-- <button type="button">??</button> -->
+      </div>
+
+      <form class="nav-transfer" id="transfer-submit">
+        <div class="filebox">
+          <label for="input-file">Private Key 업로드 -->></label>
+
+          <input
+            type="file"
+            value="privateKey file"
+            placeholder="privateKey file"
+            accept=".json"
+            required
+            id="privateKeyUpload"
+          />
+        </div>
+
+        <input id="send-amount" type="text" placeholder="전송 할 ETH" />
+        <input id="toAddress" type="textarea" placeholder="보낼 주소" />
+        <button type="submit">전송</button>
+      </form>
+
+      <div>
+        <ul id="detail-view-container">
+          <!-- Transaction list -->
+        </ul>
+
+        <div class="display-none">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <script src="bundle.js" defer></script>
+  </body>
+</html>
