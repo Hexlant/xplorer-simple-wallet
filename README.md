@@ -18,9 +18,8 @@ xplorer를 활용한 간단한 이더리움 지갑 만들어보기 튜토리얼 
 
 ## How to Use
 
-1. cd simple-wallet
-2. yarn install
-3. yarn start
+1. yarn install
+2. yarn start
 
 ## Build
 
