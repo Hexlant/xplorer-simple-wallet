@@ -3,7 +3,7 @@
 ## Motivation
 
 xplorer를 활용한 간단한 이더리움 지갑 만들어보기 튜토리얼 입니다.<br />
-[포스팅 제목 미정](https://medium.com/hexlant/xplorer-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-%EC%9D%B4%EB%8D%94%EB%A6%AC%EC%9B%80-%EC%A7%80%EA%B0%91-%EB%A7%8C%EB%93%A4%EA%B8%B0-4f42dd50a7fa) 에서 상세한 설명을 보실 수 있습니다.
+[Medium](https://medium.com/hexlant/xplorer-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-%EC%9D%B4%EB%8D%94%EB%A6%AC%EC%9B%80-%EC%A7%80%EA%B0%91-%EB%A7%8C%EB%93%A4%EA%B8%B0-4f42dd50a7fa) 에서 상세한 설명을 보실 수 있습니다.
 
 ## Project spec
 
