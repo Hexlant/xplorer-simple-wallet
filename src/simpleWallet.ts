@@ -102,7 +102,7 @@ export default class SimpleWallet {
   }
 
   private createAndEncryptKey() {
-    // private key 복호화
+    // private key 암호화
     const keystore = this.web3.eth.accounts.encrypt(
       this.getWallet[this.getWallet.length - 1].privateKey,
       STORAGE_KEY.PASSWORD
