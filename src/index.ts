@@ -41,7 +41,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // 페이지 랜더링 후 기본 지갑의 잔액 조회
   const renderDefaultWalletBalance = async () => {
-    const balance = await wallet.getBalance();
+    const balance = await wallet.getBalance(
+      walletListSelect.options[walletListSelect.selectedIndex || 0]?.textContent
+    );
     balanceSpan.innerHTML = balance;
   };
   renderDefaultWalletBalance();
@@ -70,6 +72,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const address = await wallet.createWallet();
     addAddressToList(address);
+    renderDefaultWalletBalance();
   });
 
   // 지갑 주소 리스트 랜더링
